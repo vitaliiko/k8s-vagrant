@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ingress-nginx-http
+  namespace: ingress-nginx
+  annotations:
+    metallb.universe.tf/allow-shared-ip: ingress-nginx
+spec:
+  type: LoadBalancer
+  loadBalancerIP: 172.42.42.101
+  externalTrafficPolicy: Local
+  ports:
+  - name: http
+    port: 80
+    targetPort: 80
+    protocol: TCP
+  selector:
+    app: ingress-nginx
+
+---
+#this is a dummy to stop the log flood: https://github.com/kubernetes/ingress-nginx/issues/2599
+apiVersion: v1
+kind: Service
+metadata:
+  name: ingress-nginx
+  namespace: ingress-nginx
+spec:
+  type: ClusterIP
+  ports:
+  - name: http
+    port: 80
+    targetPort: 80
+    protocol: TCP
+  - name: https
+    port: 443
+    targetPort: 443
+    protocol: TCP
+  selector:
+    app: ingress-nginx
