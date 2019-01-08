@@ -33,5 +33,4 @@ echo "*** Install ZSH ***"
 apt-get install -y zsh git
 su - vagrant -c 'wget -q https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh && chmod +x install.sh'
 su - vagrant -c 'echo vagrant | ./install.sh && rm -f install.sh'
-su - vagrant -c "sed -i 's/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"3den\"/g' ~/.zshrc"
 su - vagrant -c 'echo '"'"'PROMPT="$fg_bold[blue]%}%m ${PROMPT}"'"'"' >> ~/.zshrc'

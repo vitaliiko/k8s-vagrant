@@ -8,3 +8,5 @@ spec:
     name: nginx
     ports:
     - containerPort: 80
+      name: http
+      protocol: TCP
