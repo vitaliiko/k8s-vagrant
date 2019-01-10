@@ -1,8 +1,13 @@
-Kubernetes lections (RUS):
-  - https://www.youtube.com/watch?v=xFCGzGq3BjU
-  - https://www.youtube.com/watch?v=oZxHieKKnHs
-  - https://www.youtube.com/watch?v=x4M9qP8wdTU
-  - https://www.youtube.com/watch?v=srBQOOpiAow
+Literature:
+ - https://kubernetes.io/docs/home/?path=browse
+ - https://www.youtube.com/watch?v=CgCLPYJRxbU
+ - https://www.youtube.com/watch?v=xFCGzGq3BjU&t=1134s
+ - https://github.com/iMarcoGovea/books/blob/master/dev-ops/kubernetes/kubernetes-up-running.pdf
+ - https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0
+ - https://kubernetes.github.io/ingress-nginx/deploy/baremetal/
+ - https://metallb.universe.tf/
+ - https://www.weave.works/blog/kubernetes-faq-how-can-i-route-traffic-for-kubernetes-on-bare-metal
+ - https://www.weave.works/blog/kubernetes-faq-configure-storage-for-bare-metal-cluster
 
 #### Dashboard access:
 
